@@ -11,7 +11,7 @@
     if(mysqli_num_rows($query) > 0){
         include_once "data.php";
     }else{
-        $output .= 'Ձեր որոնման բառի հետ կապված օգտվող չի գտնվել';
+        $output .= 'No user found for your search term';
     }
     echo $output;
 ?>

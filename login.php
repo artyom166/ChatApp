@@ -9,7 +9,7 @@
 <body>
   <div class="wrapper">
     <section class="form login">
-      <header>Taxi Chat App</header>
+      <header> Chat App</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">
@@ -25,7 +25,7 @@
           <input type="submit" name="submit" value="Continue to Chat">
         </div>
       </form>
-      <div class="link">Դեռ չե՞ք գրանցվել: <a href="index.php">գրանցվել հիմա</a></div>
+      <div class="link">Not signed up yet? <a href="index.php">register now</a></div>
     </section>
   </div>
   

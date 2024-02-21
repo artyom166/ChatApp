@@ -16,15 +16,15 @@
                     $_SESSION['unique_id'] = $row['unique_id'];
                     echo "success";
                 }else{
-                    echo "Ինչ որ բան այնպես չգնաց. Խնդրում եմ կրկին փորձեք!";
+                    echo "Something went wrong. Please try again!";
                 }
             }else{
-                echo "Էլփոստը կամ գաղտնաբառը սխալ է:";
+                echo "The email or password is incorrect.";
             }
         }else{
-            echo "$email - Այս email գոյություն չունի:";
+            echo "$email - This email does not exist.";
         }
     }else{
-        echo "Բոլոր մուտքագրման դաշտերը պարտադիր են:";
+        echo "All input fields are required.";
     }
 ?>

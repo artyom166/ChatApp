@@ -10,7 +10,7 @@
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
             $sql = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
             if(mysqli_num_rows($sql) > 0){
-                echo "$email - Այս email արդեն գոյություն ունի:";
+                echo "$email - This email already exists.";
             }else{
                 if(isset($_FILES['image'])){
                     $img_name = $_FILES['image']['name'];
@@ -39,24 +39,24 @@
                                         $_SESSION['unique_id'] = $result['unique_id'];
                                         echo "success";
                                     }else{
-                                        echo "Այս էլփոստի հասցեն գոյություն չունի:";
+                                        echo "This email address does not exist.";
                                     }
                                 }else{
-                                    echo "Ինչ որ բան այնպես չգնաց. Խնդրում եմ կրկին փորձեք!";
+                                    echo "Something went wrong. Please try again!";
                                 }
                             }
                         }else{
-                            echo "Խնդրում ենք վերբեռնել պատկերային ֆայլ՝ jpeg, png, jpg";
+                            echo "Please upload an image file: jpeg, png, jpg";
                         }
                     }else{
-                        echo "Խնդրում ենք վերբեռնել պատկերային ֆայլ՝ jpeg, png, jpg";
+                        echo "Please upload an image file: jpeg, png, jpg";
                     }
                 }
             }
         }else{
-            echo "$email վավեր էլփոստ չէ:";
+            echo "$email not a valid email.";
         }
     }else{
-        echo "Բոլոր մուտքագրման դաշտերը պարտադիր են:";
+        echo "All input fields are required.";
     }
 ?>

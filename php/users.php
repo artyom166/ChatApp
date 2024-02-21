@@ -6,7 +6,7 @@
     $query = mysqli_query($conn, $sql);
     $output = "";
     if(mysqli_num_rows($query) == 0){
-        $output .= "Զրուցելու համար օգտվողներ չկան";
+        $output .= "There are no users to chat with";
     }elseif(mysqli_num_rows($query) > 0){
         include_once "data.php";
     }

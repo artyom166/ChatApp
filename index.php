@@ -8,16 +8,16 @@
 <body>
   <div class="wrapper">
     <section class="form signup">
-      <header>Taxi Chat App</header>
+      <header> Chat App</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
           <div class="field input">
-            <label>Անուն</label>
+            <label>Name</label>
             <input type="text" name="fname" placeholder="First name" required>
           </div>
           <div class="field input">
-            <label>Ազգանուն</label>
+            <label>Surname</label>
             <input type="text" name="lname" placeholder="Last name" required>
           </div>
         </div>
@@ -31,15 +31,15 @@
           <i class="fas fa-eye"></i>
         </div>
         <div class="field image">
-          <label>Ընտրեք Նկար</label>
+          <label>Select Image</label>
           <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
         </div>
         
         <div class="field button">
-          <input type="submit" name="submit" value="Շարունակեք զրուցել">
+          <input type="submit" name="submit" value="Continue to Chat">
         </div>
       </form>
-      <div class="link">Արդեն գրանցվե՞լ եք: <a href="login.php">Մուտք գործեք հիմա</a></div>
+      <div class="link">Already registered? <a href="login.php">Log in now</a></div>
     </section>
   </div>
 

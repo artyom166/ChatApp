@@ -30,11 +30,11 @@ if (mysqli_num_rows($sql) > 0) {
             
           </div>
         </div>
-        <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Դուրս գալ</a>
+        <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">LogOut</a>
       </header>
       <div class="search">
-        <span class="text">Ընտրեք օգտվողին զրույց սկսելու համար</span>
-        <input type="text" placeholder="Մուտքագրեք անունը որոնման համար...">
+        <span class="text">Select a user to start a chat with</span>
+        <input type="text" placeholder="Enter name to search...">
         <button><i class="fas fa-search"></i></button>
       </div>
 
